@@ -32,20 +32,20 @@ function InstagramIcon() {
 export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 md:px-6 md:pt-4">
-      <nav className="mx-auto flex h-[60px] max-w-[1320px] items-center justify-between rounded-[18px] border border-white/10 bg-[#141414]/90 pl-5 pr-2 backdrop-blur-md md:h-[72px] md:pl-7">
+      <nav className="mx-auto flex h-[60px] max-w-[1320px] items-center justify-between rounded-[18px] border border-white/15 bg-white/[0.06] pl-5 pr-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_10px_30px_-12px_rgba(0,0,0,0.5)] backdrop-blur-xl backdrop-saturate-150 md:h-[72px] md:pl-7">
         <div className="flex items-center">
           <a href="#" className="text-[17px] font-bold tracking-[-0.04em] md:text-[19px]">
             <span className="text-white">keturah</span>
-            <span className="text-[#8c8c8c]">hamilton.</span>
+            <span className="text-white/55">hamilton.</span>
           </a>
-          <span className="mx-8 hidden h-10 w-px bg-white/10 lg:block" />
+          <span className="mx-8 hidden h-10 w-px bg-white/15 lg:block" />
           <ul className="hidden items-center gap-7 lg:flex">
             {links.map((l) => (
               <li key={l.label}>
                 <a
                   href={l.href}
                   className={`text-[15px] font-medium transition-colors ${
-                    l.active ? "text-white" : "text-[#9a9a9a] hover:text-white"
+                    l.active ? "text-white" : "text-white/65 hover:text-white"
                   }`}
                 >
                   {l.label}
@@ -60,7 +60,7 @@ export function Navbar() {
             href="https://www.instagram.com/keturahhamilton/"
             target="_blank"
             rel="noreferrer"
-            className="hidden items-center gap-2 text-[15px] font-medium text-[#b5b5b5] transition-colors hover:text-white md:flex"
+            className="hidden items-center gap-2 text-[15px] font-medium text-white/75 transition-colors hover:text-white md:flex"
           >
             <InstagramIcon />
             @keturahhamilton
